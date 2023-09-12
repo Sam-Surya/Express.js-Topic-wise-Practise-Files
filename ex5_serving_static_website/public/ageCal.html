@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Toolzpoint</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+
+                    <a class="nav-link" href="simplecal.html">Calculator</a>
+                    <a class="nav-link" href="stringconverter.html">String Manipulator</a>
+                    <a class="nav-link" href="bmi.html">BMI</a>
+                    <a class="nav-link" href="ageCal.html">Age Calculator</a>
+                    <a class="nav-link" href="24to12.html">24to12</a>
+                    <a class="nav-link" href="12to24.html">12to24</a>
+                    <a class="nav-link" href="about.html">About Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+   
+    <div class="container my-2">
+
+        <div class="container mt-5">
+            <label for="birthdate" class="form-label">Select Date of Birth:</label>
+            <input type="range" class="form-range" id="birthdate" min="1" max="31" step="1">
+            <div id="birthdatedisplay"></div>
+        </div>
+    
+        <div class="container mt-5">
+            <label for="birthmonth" class="form-label">Select Month of Birth:</label>
+            <input type="range" class="form-range" id="birthmonth" min="1" max="12" step="1">
+            <div id="birthmonthdisplay"></div>
+        </div>
+    
+        <div class="container mt-5 my-2">
+            <label for="yearofbirth" class="form-label">Enter Year of Birth: </label>
+            <input type="text" class="form-control" id="yearofbirth" aria-describedby="emailHelp">
+        </div>
+    
+    </div>
+    
+    <hr>
+    
+    <div class="container my-2">
+    
+        <div class="container mt-5">
+            <label for="ageatdate" class="form-label">Age at Date of:</label>
+            <input type="range" class="form-range" id="ageatdate" min="1" max="31" step="1">
+            <div id="ageatdatedisplay"></div>
+        </div>
+    
+        <div class="container mt-5">
+            <label for="ageatmonth" class="form-label">Age at Month of:</label>
+            <input type="range" class="form-range" id="ageatmonth" min="1" max="12" step="1">
+            <div id="ageatmonthdisplay"></div>
+        </div>
+    
+        <div class="container mt-5 my-3">
+            <label for="ageatyear" class="form-label">Age at Year of:</label>
+            <input type="text" class="form-control" id="ageatyear" aria-describedby="emailHelp">
+        </div>
+    
+    </div>
+
+    <div class="container my-2">
+    
+    <div class="container d-flex justify-content-center align-items-center my-4">
+        <button type="button" class="btn btn-dark" onclick="calculateAgeButton(event)">Calculate Age</button>
+    </div>
+    
+    <div class="container d-flex justify-content-center align-items-center my-4">
+        <label for="ageDisplay" class="form-label">Your age in Years: </label>
+        <input class="form-control" type="text" value="Your Age will appear here ..." aria-label="readonly input example" id="ageDisplay" readonly>
+    </div>
+
+    <div class="container d-flex justify-content-center align-items-center my-4">
+        <label for="ageDisplaymnt" class="form-label">Your age in Month: </label>
+        <input class="form-control" type="text" value="Your Age will appear here ..." aria-label="readonly input example" id="ageDisplaymnt" readonly>
+    </div>
+    
+    <div class="container d-flex justify-content-center align-items-center my-4">
+        <label for="ageDisplaydys" class="form-label">Your age in Days: </label>
+        <input class="form-control" type="text" value="Your Age will appear here ..." aria-label="readonly input example" id="ageDisplaydys" readonly>
+    </div>
+
+    <div class="container d-flex justify-content-center align-items-center my-4">
+        <label for="ageDisplayhrs" class="form-label">Your age in Hours: </label>
+        <input class="form-control" type="text" value="Your Age will appear here ..." aria-label="readonly input example" id="ageDisplayhrs" readonly>
+    </div>
+
+    <div class="container d-flex justify-content-center align-items-center my-4">
+        <label for="ageDisplaymin" class="form-label">Your age in Minutes: </label>
+        <input class="form-control" type="text" value="Your Age will appear here ..." aria-label="readonly input example" id="ageDisplaymin" readonly>
+    </div>
+
+    <div class="container d-flex justify-content-center align-items-center my-4">
+        <label for="ageDisplaysec" class="form-label">Your age in Seconds: </label>
+        <input class="form-control" type="text" value="Your Age will appear here ..." aria-label="readonly input example" id="ageDisplaysec" readonly>
+    </div>
+
+    </div>
+
+
+
+
+<script src="age.js"></script>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+</html>

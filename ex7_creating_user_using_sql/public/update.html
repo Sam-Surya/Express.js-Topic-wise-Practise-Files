@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL - Express</title>
+</head>
+<body class="d-flex justify-content-center align-items-center my-4">
+    <div class="container text-center">
+        <h3>UPDATE DATA</h3>
+        <form action="/update" method="POST">
+            <div class="mb-3">
+                <label for="username" class="form-label">Name:</label>
+                <input type="text" class="form-control" id="username" name="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Class:</label>
+                <input type="text" class="form-control" id="password" name="std" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="username" class="form-label">Update Name:</label>
+                <input type="text" class="form-control" id="username" name="uname" required>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Update Class:</label>
+                <input type="text" class="form-control" id="password" name="ustd" required>
+            </div>
+            <button type="submit" class="btn btn-dark">Submit</button>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
